@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illinois Cities</title>
+    <link rel="stylesheet" href="main_page.css" />
+    <style>
+      body {
+        background: url("./images/illinois-outline.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .city_list {
+        max-width: 700px;
+        margin: 40px auto;
+        position: relative;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 24px;
+        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+        padding-bottom: 24px;
+      }
+      .city_list_content {
+        position: relative;
+        z-index: 1;
+      }
+      .city_list_content ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+      }
+      .city_list_content li {
+        background: #034926;
+        border-radius: 16px;
+        color: white;
+        width: 100%;
+        max-width: 420px;
+        padding: 24px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav_container" id="nav_container">
+      <div class="title_logo">
+        <img
+          src="./images/Seal_of_Illinois.svg.png"
+          alt="Illinois state seal"
+          class="illinois_seal"
+        />
+        <h1 class="web-title" style="font-size: 30px">Illinois Cities</h1>
+      </div>
+    </nav>
+    <ul class="nav_links">
+      <li>
+        <a href="./index.html" class="nav_item">Home</a>
+      </li>
+      <li>
+        <a href="./history.html" class="nav_item">History</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="nav_item">Contact</a>
+      </li>
+      <li>
+        <a href="./transport.html" class="nav_item">Transport</a>
+      </li>
+    </ul>
+
+    <div class="city_list">
+      <div class="city_list_content">
+        <h1 style="text-align: center">Major Cities in Illinois</h1>
+        <ul>
+          <li>
+            <img
+              src="./images/chi_kayak.webp"
+              alt="Chicago"
+              style="width: 100%; border-radius: 16px; margin-bottom: 16px"
+            />
+            <h2>Chicago</h2>
+            <p>
+              The largest city in Illinois, Chicago is known for its stunning
+              architecture, vibrant arts scene, and deep-dish pizza. It sits on
+              the shores of Lake Michigan and is a major hub for culture,
+              business, and transportation.
+              <sup><a href="#cities-cite" style="color: #aaffc3">[1]</a></sup>
+            </p>
+            <a href="chicago.html" class="nav_item" style="color: #aaffc3"
+              >Learn more &rarr;</a
+            >
+          </li>
+          <li>
+            <img
+              src="./images/springfieldDT.webp"
+              alt="Springfield"
+              style="
+                width: 100%;
+                border-radius: 16px;
+                margin-bottom: 16px;
+                object-fit: fit;
+              "
+            />
+            <h2>Springfield</h2>
+            <p>
+              The state capital, Springfield is famous as Abraham Lincoln’s home
+              and features many historic sites related to the former president.
+              It is the political center of Illinois.
+              <sup><a href="#cities-cite" style="color: #aaffc3">[2]</a></sup>
+            </p>
+            <a href="springfield.html" class="nav_item" style="color: #aaffc3"
+              >Learn more &rarr;</a
+            >
+          </li>
+          <li>
+            <img
+              src="./images/peoria_night.jpg"
+              alt="peoria"
+              style="
+                width: 100%;
+                border-radius: 16px;
+                margin-bottom: 16px;
+                object-fit: fit;
+              "
+            />
+            <h2>Peoria</h2>
+            <p>
+              Located along the Illinois River, Peoria is known for its
+              beautiful riverfront, cultural attractions, and as a center for
+              industry and agriculture in central Illinois.
+              <sup><a href="#cities-cite" style="color: #aaffc3">[3]</a></sup>
+            </p>
+            <a href="peoria.html" class="nav_item" style="color: #aaffc3"
+              >Learn more &rarr;</a
+            >
+          </li>
+        </ul>
+        <div
+          id="cities-cite"
+          style="margin-top: 32px; font-size: 15px; color: #aaffc3"
+        >
+          <hr style="border-color: #aaffc3; margin-bottom: 10px" />
+          [1]
+          <a
+            href="https://en.wikipedia.org/wiki/Chicago"
+            target="_blank"
+            style="color: #aaffc3"
+            >Wikipedia - Chicago</a
+          >,
+          <a
+            href="https://www.britannica.com/place/Chicago"
+            target="_blank"
+            style="color: #aaffc3"
+            >Britannica - Chicago</a
+          >
+          <br />
+          [2]
+          <a
+            href="https://en.wikipedia.org/wiki/Springfield,_Illinois"
+            target="_blank"
+            style="color: #aaffc3"
+            >Wikipedia - Springfield, Illinois</a
+          >,
+          <a
+            href="https://www.visitspringfieldillinois.com/"
+            target="_blank"
+            style="color: #aaffc3"
+            >Visit Springfield</a
+          >
+          <br />
+          [3]
+          <a
+            href="https://en.wikipedia.org/wiki/Peoria,_Illinois"
+            target="_blank"
+            style="color: #aaffc3"
+            >Wikipedia - Peoria, Illinois</a
+          >,
+          <a
+            href="https://www.peoria.org/"
+            target="_blank"
+            style="color: #aaffc3"
+            >Discover Peoria</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

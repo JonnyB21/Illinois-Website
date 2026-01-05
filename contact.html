@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main_page.css" />
+    <script src="main.js"></script>
+    <style>
+      body {
+        background: linear-gradient(120deg, #e6f4ea 0%, #eafaf1 100%);
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .contact-container {
+        max-width: 500px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 24px;
+        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+        padding: 32px 24px;
+      }
+      .contact-title {
+        font-family: "Poetsen One", Arial, sans-serif;
+        color: #034926;
+        font-size: 2rem;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+      .contact-form label {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #034926;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #b2d6ff;
+        margin-bottom: 12px;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+      .contact-form button {
+        background: #034926;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-family: inherit;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .contact-form button:hover {
+        background: #016410;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav_container" id="nav_container">
+      <div class="title_logo">
+        <img
+          src="./images/Seal_of_Illinois.svg.png"
+          alt="Illinois state seal"
+          class="illinois_seal"
+        />
+      </div>
+    </nav>
+    <ul class="nav_links">
+      <li>
+        <a href="./index.html" class="nav_item">Home</a>
+      </li>
+      <li>
+        <a href="./cities.html" class="nav_item">Cities</a>
+      </li>
+      <li>
+        <a href="./history.html" class="nav_item">History</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="nav_item">Contact</a>
+      </li>
+    </ul>
+    <div class="contact-container">
+      <h1 class="contact-title">Contact Us</h1>
+      <form class="contact-form" autocomplete="off">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="confirmEmail">Confirm Email Address:</label>
+        <input type="email" id="confirmEmail" name="confirmEmail" required />
+
+        <label for="question">Your Question:</label>
+        <textarea id="question" name="question" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

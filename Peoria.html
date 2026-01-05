@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peoria, Illinois</title>
+    <link rel="stylesheet" href="main_page.css" />
+    <style>
+      body {
+        background: linear-gradient(120deg, #e6f4ea 0%, #eafaf1 100%),
+          url("./images/illinois-outline.jpg") no-repeat right 5% bottom 5%,
+          radial-gradient(circle at 20% 20%, #aaffc3 0%, transparent 60%),
+          radial-gradient(circle at 80% 80%, #b2d6ff 0%, transparent 70%);
+        background-size: auto, 350px, 600px 600px, 700px 700px;
+        background-blend-mode: lighten, normal, lighten, lighten;
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .peoria-flex-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+      .peoria-container {
+        flex: 1 1 420px;
+        max-width: 700px;
+        background: rgb(150, 240, 150);
+        border-radius: 24px;
+        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+        padding: 32px 24px 32px 24px;
+        min-width: 320px;
+      }
+      .peoria-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 24px;
+      }
+      .peoria-header img {
+        width: 180px;
+        border-radius: 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      }
+      .peoria-title {
+        font-family: "Poetsen One", Arial, sans-serif;
+        font-size: 2rem;
+        color: #034926;
+        margin: 0;
+      }
+      .peoria-info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+      }
+      .peoria-info-list li {
+        margin-bottom: 14px;
+        font-size: 1.1rem;
+        color: #034926;
+      }
+      .peoria-desc {
+        font-size: 1.08rem;
+        color: #222;
+        margin-bottom: 0;
+      }
+      .peoria-pics {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+      .peoria-pics img {
+        width: 240px;
+        max-width: 90vw;
+        border-radius: 18px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 24px;
+        color: #016410;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 6px;
+        padding: 6px 16px;
+        background: #eafaf1;
+        transition: background 0.2s;
+      }
+      .back-link:hover {
+        background: #aaffc3;
+        color: #034926;
+      }
+      @media (max-width: 1100px) {
+        .peoria-flex-wrap {
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+        }
+        .peoria-pics {
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 24px;
+          gap: 18px;
+        }
+        .peoria-pics img {
+          width: 30vw;
+          min-width: 120px;
+          max-width: 220px;
+        }
+      }
+      @media (max-width: 700px) {
+        .peoria-pics {
+          flex-direction: column;
+          align-items: center;
+          gap: 18px;
+        }
+        .peoria-pics img {
+          width: 90vw;
+          max-width: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav_container" id="nav_container">
+      <div class="title_logo">
+        <img
+          src="./images/Seal_of_Illinois.svg.png"
+          alt="Illinois state seal"
+          class="illinois_seal"
+        />
+        <h1 class="web-title" style="font-size: 30px">Peoria, Illinois</h1>
+      </div>
+    </nav>
+    <ul class="nav_links">
+      <li>
+        <a href="./index.html" class="nav_item">Home</a>
+      </li>
+      <li>
+        <a href="./cities.html" class="nav_item">Cities</a>
+      </li>
+      <li>
+        <a href="./history.html" class="nav_item">History</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="nav_item">Contact</a>
+      </li>
+    </ul>
+
+    <div class="peoria-flex-wrap">
+      <div class="peoria-container">
+        <div class="peoria-header">
+          <img src="./images/peoria_icon.jpeg" alt="Peoria skyline" />
+          <h1 class="peoria-title">Peoria, Illinois</h1>
+        </div>
+        <ul class="peoria-info-list">
+          <li>
+            <strong>Population:</strong> Approximately 111,000 (2023 estimate).
+            Peoria is the seventh-largest city in Illinois and the largest city
+            on the Illinois River.
+            <sup><a href="#peoria-cite" style="color: #034926">[1]</a></sup>
+          </li>
+          <li>
+            <strong>Founded:</strong> Established in 1691 by French explorers as
+            Fort Crevecoeur, Peoria is the oldest European settlement in
+            Illinois. It was incorporated as a town in 1835 and as a city in
+            1845.
+            <sup><a href="#peoria-cite" style="color: #034926">[1]</a></sup>
+          </li>
+          <li>
+            <strong>Region:</strong> Located in Central Illinois, Peoria sits
+            along the Illinois River and serves as the county seat of Peoria
+            County. The city is part of the Peoria Metropolitan Statistical
+            Area, which includes several surrounding communities.
+            <sup><a href="#peoria-cite" style="color: #034926">[1]</a></sup>
+          </li>
+          <li>
+            <strong>Classification:</strong> Peoria is classified as an urban
+            city and is a regional center for industry, healthcare, and
+            education. It is known for its diverse neighborhoods, vibrant
+            downtown, and strong community spirit.
+            <sup><a href="#peoria-cite" style="color: #034926">[1]</a></sup>
+          </li>
+          <li>
+            <strong>Average Household Income:</strong> Around $56,000 (U.S.
+            Census Bureau). The city has a mix of income levels, with both
+            affluent suburbs and working-class neighborhoods.
+            <sup><a href="#peoria-cite" style="color: #034926">[2]</a></sup>
+          </li>
+        </ul>
+        <p class="peoria-desc">
+          Peoria is renowned for its picturesque riverfront, historic districts,
+          and cultural attractions such as the Peoria Riverfront Museum and the
+          Peoria Civic Center. The city has a rich industrial heritage, most
+          notably as the longtime headquarters of Caterpillar Inc., a Fortune
+          100 company. Peoria is also home to Bradley University, a nationally
+          recognized private university, and several major hospitals, making it
+          a hub for education and healthcare in the region.
+          <br /><br />
+          The city’s location along the Illinois River has made it a key
+          transportation and trading center since its founding. Today, Peoria
+          offers a blend of urban amenities and natural beauty, with numerous
+          parks, trails, and outdoor recreation opportunities. Its diverse
+          economy, strong sense of community, and central location have earned
+          Peoria the reputation of being a “typical American city”—a place where
+          new products and ideas are often tested to see if they will succeed
+          nationwide.
+          <sup><a href="#peoria-cite" style="color: #034926">[1]</a></sup>
+        </p>
+        <a href="cities.html" class="back-link">&larr; Back to Cities</a>
+      </div>
+      <div class="peoria-pics">
+        <img src="./images/peoria1.jpg" alt="Peoria" />
+        <img src="./images/old_peoria.webp" alt="Old Peoria" />
+        <img src="./images/peoria_sdown.webp" alt="Peoria Skyline Downtown" />
+      </div>
+    </div>
+    <div
+      class="citation-box"
+      id="peoria-cite"
+      style="
+        margin: 32px auto 0 auto;
+        max-width: 700px;
+        font-size: 15px;
+        color: #034926;
+        background: #eafaf1;
+        border-radius: 12px;
+        padding: 16px;
+      "
+    >
+      <hr style="border-color: #034926; margin-bottom: 10px" />
+      [1]
+      <a
+        href="https://en.wikipedia.org/wiki/Peoria,_Illinois"
+        target="_blank"
+        style="color: #034926"
+        >Wikipedia - Peoria, Illinois</a
+      >,
+      <a href="https://www.peoria.org/" target="_blank" style="color: #034926"
+        >Discover Peoria</a
+      ><br />
+      [2]
+      <a
+        href="https://www.census.gov/quickfacts/peoriacityillinois"
+        target="_blank"
+        style="color: #034926"
+        >U.S. Census Bureau - Peoria</a
+      >
+    </div>
+  </body>
+</html>
